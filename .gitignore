@@ -15,3 +15,8 @@ ESC-50/
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
+
+
+# ResNet checkpoints
+
+esc50_resnet18_*.pth
