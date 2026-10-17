@@ -1,0 +1,17 @@
+
+# Python virtual environments
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Dataset repository and audio files
+ESC-50/
+
+# Environment secrets
+.env
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
