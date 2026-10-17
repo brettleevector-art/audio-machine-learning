@@ -84,6 +84,11 @@ def main():
             "esc50_resnet18_last.pth",
             lambda: build_resnet18(pretrained=False),
         ),
+        (
+            "ResNet18 (best checkpoint — diagnostic)",
+            "esc50_resnet18_best.pth",
+            lambda: build_resnet18(pretrained=False),
+        ),
     ]
 
     print("Validation fold: 5")
