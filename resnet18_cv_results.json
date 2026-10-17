@@ -1,0 +1,89 @@
+{
+  "dataset": "ESC-50",
+  "model": "Pretrained ResNet18",
+  "seed_base": 42,
+  "epochs_per_fold": 30,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "completed_folds": 5,
+  "fold_results": [
+    {
+      "validation_fold": 1,
+      "training_folds": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "training_clips": 1600,
+      "validation_clips": 400,
+      "seed": 43,
+      "final_accuracy": 0.715,
+      "best_accuracy": 0.7725,
+      "best_epoch": 28
+    },
+    {
+      "validation_fold": 2,
+      "training_folds": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "training_clips": 1600,
+      "validation_clips": 400,
+      "seed": 44,
+      "final_accuracy": 0.7875,
+      "best_accuracy": 0.82,
+      "best_epoch": 25
+    },
+    {
+      "validation_fold": 3,
+      "training_folds": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "training_clips": 1600,
+      "validation_clips": 400,
+      "seed": 45,
+      "final_accuracy": 0.73,
+      "best_accuracy": 0.775,
+      "best_epoch": 10
+    },
+    {
+      "validation_fold": 4,
+      "training_folds": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "training_clips": 1600,
+      "validation_clips": 400,
+      "seed": 46,
+      "final_accuracy": 0.8075,
+      "best_accuracy": 0.85,
+      "best_epoch": 22
+    },
+    {
+      "validation_fold": 5,
+      "training_folds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "training_clips": 1600,
+      "validation_clips": 400,
+      "seed": 47,
+      "final_accuracy": 0.7475,
+      "best_accuracy": 0.7475,
+      "best_epoch": 30
+    }
+  ],
+  "mean_final_accuracy": 0.7575,
+  "std_final_accuracy": 0.0348209706929603
+}
