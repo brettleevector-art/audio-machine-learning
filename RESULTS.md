@@ -164,3 +164,24 @@ between folds.
 These results provide an estimate of ResNet18 performance
 across the ESC-50 folds. They do not establish performance
 on every possible environmental recording.
+
+## 10. Audio Inference
+
+- Shared audio preprocessing is implemented in `dataset.py`.
+- `predict.py` loads a trained ResNet18 checkpoint and returns
+  the five highest-scoring ESC-50 categories.
+- `app.py` provides a local Gradio audio-upload interface.
+- Training and inference share the same sample rate, clip length,
+  mel-spectrogram configuration, and normalization.
+
+### Running the interface
+
+Activate the project virtual environment and run:
+
+    python app.py
+
+Open the local URL printed by Gradio and upload an audio recording
+to view the five highest-scoring sound categories.
+
+Prediction scores are softmax outputs and should not be interpreted
+as calibrated probabilities.

@@ -20,3 +20,5 @@ ESC-50/
 # ResNet checkpoints
 
 esc50_resnet18_*.pth
+# Gradio local flagging data
+.gradio/
