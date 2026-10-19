@@ -15,6 +15,7 @@ demo = gr.Interface(
         num_top_classes=5,
         label="Predicted sound categories",
     ),
+    flagging_mode="never",
     title="WILDLIGHT | Environmental Audio Intelligence",
     description=(
         "Classifies a five-second audio window into one of "
@@ -24,4 +25,4 @@ demo = gr.Interface(
 
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(share=True)
